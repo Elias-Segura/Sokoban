@@ -1,0 +1,66 @@
+.Street{
+-fx-background-image: url("../image/Box.png");
+  -fx-background-size: 100% 100% ;
+}
+
+.Pane{
+  -fx-background-image: url("../image/bloque.png");
+  -fx-background-size: 100% 100% ;
+}
+.Level2{
+  -fx-background-image: url("../image/BoxLevel2.png");
+  -fx-background-size: 100% 100% ;
+}
+.Level3{
+  -fx-background-image: url("../image/BoxLevel3.png");
+  -fx-background-size: 100% 100% ;
+}
+.Level4{
+  -fx-background-image: url("../image/BoxLevel4.png");
+  -fx-background-size: 100% 100% ;
+}
+.Level5{
+  -fx-background-image: url("../image/BoxLevel5.png");
+  -fx-background-size: 100% 100% ;
+}
+.Level6{
+  -fx-background-image: url("../image/BoxLevel6.png");
+  -fx-background-size: 100% 100% ;
+}
+.Level7{
+  -fx-background-image: url("../image/BoxLevel7.png");
+  -fx-background-size: 100% 100% ;
+}
+.Level8{
+  -fx-background-image: url("../image/BoxLevel8.png");
+  -fx-background-size: 100% 100% ;
+}
+.Level9{
+  -fx-background-image: url("../image/BoxLevel9.png");
+  -fx-background-size: 100% 100% ;
+}
+.Level10{
+  -fx-background-image: url("../image/BoxLevel10.png");
+  -fx-background-size: 100% 100% ;
+}
+.Level11{
+  -fx-background-image: url("../image/BoxLevel11.png");
+  -fx-background-size: 100% 100% ;
+}
+.Level12{
+  -fx-background-image: url("../image/Boxlevel12.png");
+  -fx-background-size: 100% 100% ;
+}
+.SelectedPersonage{
+    
+   -fx-background-color:  #30475e;
+   -fx-background-radius: 100;
+   -fx-background-insets: 22 8;
+   
+}
+.IsNotSelectedPersonage{
+    
+     -fx-background-color:  #116979;
+   -fx-background-radius: 100;
+   -fx-background-insets: 22 8;
+}

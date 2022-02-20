@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="340.0" maxWidth="600.0" minHeight="340.0" minWidth="600.0" prefHeight="340.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="principal.PlayerWinController">
+   <children>
+      <Pane layoutX="57.0" layoutY="28.0" maxHeight="340.0" maxWidth="600.0" prefHeight="340.0" prefWidth="600.0" style="-fx-background-color: #283e51;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="180.0" fitWidth="115.0" layoutX="410.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/personaje.png" />
+               </image>
+               <effect>
+                  <InnerShadow blurType="TWO_PASS_BOX" color="#026668" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="56.0" fitWidth="62.0" layoutX="127.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/NoAchievement.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="232.0" layoutY="142.0" text="You won..." textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font size="39.0" />
+               </font>
+               <effect>
+                  <InnerShadow choke="0.25" color="#14a9fffb" height="0.0" radius="4.75" />
+               </effect>
+            </Label>
+            <Label layoutX="251.0" layoutY="250.0" text="Completed Successfully" textFill="WHITE" />
+         </children>
+         <effect>
+            <InnerShadow choke="0.92" color="#1a6e992b" height="118.85" radius="78.94" width="198.91" />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

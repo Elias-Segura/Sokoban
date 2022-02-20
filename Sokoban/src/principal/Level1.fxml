@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="tabla" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="500.0" minWidth="850.0" onKeyPressed="#Avatar" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="principal.Level1Controller">
+   <children>
+      <GridPane fx:id="tablero" layoutX="23.0" onMouseClicked="#MouseClick" prefHeight="500.0" prefWidth="850.0" style="-fx-background-color: #29323c;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="NEVER" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="NEVER" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="50.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="50.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="ALWAYS" minWidth="10.0" prefWidth="50.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+          <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+          <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+          <RowConstraints maxHeight="1.7976931348623157E308" minHeight="20.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="91.0" layoutY="228.0" pickOnBounds="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../image/BoxSave.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="48.0" layoutY="268.0" pickOnBounds="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../image/BoxSave.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="75.0" layoutY="268.0" pickOnBounds="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../image/BoxSave.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="75.0" layoutY="268.0" pickOnBounds="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="12" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../image/BoxSave.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets top="20.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="48.0" layoutY="293.0" pickOnBounds="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="12" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../image/BoxSave.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets top="20.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="75.0" layoutY="293.0" pickOnBounds="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="12" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../image/BoxSave.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets top="20.0" />
+               </GridPane.margin>
+            </ImageView>
+            <Pane cacheShape="false" centerShape="false" layoutX="48.0" layoutY="293.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+            <Pane cacheShape="false" centerShape="false" layoutX="48.0" layoutY="479.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="2" GridPane.rowIndex="15" />
+            <Pane cacheShape="false" centerShape="false" layoutX="86.0" layoutY="479.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="3" GridPane.rowIndex="15" />
+            <Pane cacheShape="false" centerShape="false" layoutX="10.0" layoutY="293.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.rowIndex="10" />
+            <Pane cacheShape="false" centerShape="false" layoutX="10.0" layoutY="324.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.rowIndex="11" />
+            <Pane cacheShape="false" centerShape="false" layoutX="10.0" layoutY="355.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.rowIndex="12" />
+            <Pane cacheShape="false" centerShape="false" layoutX="10.0" layoutY="386.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.rowIndex="13" />
+            <Pane cacheShape="false" centerShape="false" layoutX="10.0" layoutY="417.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.rowIndex="14" />
+            <Pane cacheShape="false" centerShape="false" layoutX="20.0" layoutY="427.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.rowIndex="15" />
+            <Pane cacheShape="false" centerShape="false" layoutX="10.0" layoutY="293.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.rowIndex="1" />
+            <Pane cacheShape="false" centerShape="false" layoutX="10.0" layoutY="293.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.rowIndex="2" />
+            <Pane cacheShape="false" centerShape="false" layoutX="10.0" layoutY="293.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.rowIndex="3" />
+            <Pane cacheShape="false" centerShape="false" layoutX="10.0" layoutY="293.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.rowIndex="4" />
+            <Pane cacheShape="false" centerShape="false" layoutX="10.0" layoutY="293.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.rowIndex="5" />
+            <Pane cacheShape="false" centerShape="false" layoutX="10.0" layoutY="293.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.rowIndex="6" />
+            <Pane cacheShape="false" centerShape="false" layoutX="10.0" layoutY="293.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.rowIndex="7" />
+            <Pane cacheShape="false" centerShape="false" layoutX="10.0" layoutY="293.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.rowIndex="8" />
+            <Pane cacheShape="false" centerShape="false" layoutX="10.0" layoutY="10.0" maxHeight="60.0" maxWidth="64.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="1" />
+            <Pane cacheShape="false" centerShape="false" layoutX="48.0" layoutY="10.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="2" />
+            <Pane cacheShape="false" centerShape="false" layoutX="86.0" layoutY="10.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="3" />
+            <Pane cacheShape="false" centerShape="false" layoutX="124.0" layoutY="10.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="4" />
+            <Pane cacheShape="false" centerShape="false" layoutX="162.0" layoutY="10.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="5" />
+            <Pane cacheShape="false" centerShape="false" layoutX="200.0" layoutY="10.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="6" GridPane.halignment="CENTER" />
+            <Pane cacheShape="false" centerShape="false" layoutX="238.0" layoutY="10.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="7" GridPane.halignment="CENTER" />
+            <Pane cacheShape="false" centerShape="false" layoutX="276.0" layoutY="10.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="8" GridPane.halignment="CENTER" />
+            <Pane cacheShape="false" centerShape="false" layoutX="314.0" layoutY="10.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="9" GridPane.halignment="CENTER" />
+            <Pane cacheShape="false" centerShape="false" layoutX="353.0" layoutY="10.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="10" GridPane.halignment="CENTER" />
+            <Pane cacheShape="false" centerShape="false" layoutX="392.0" layoutY="10.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="11" GridPane.halignment="CENTER" />
+            <Pane cacheShape="false" centerShape="false" layoutX="431.0" layoutY="10.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="12" GridPane.halignment="CENTER" />
+            <Pane cacheShape="false" centerShape="false" layoutX="470.0" layoutY="10.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="13" GridPane.halignment="CENTER" />
+            <Pane cacheShape="false" centerShape="false" layoutX="509.0" layoutY="10.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="14" />
+            <Pane cacheShape="false" centerShape="false" layoutX="548.0" layoutY="10.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="15" />
+            <Pane cacheShape="false" centerShape="false" layoutX="587.0" layoutY="10.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="16" />
+            <Pane cacheShape="false" centerShape="false" layoutX="626.0" layoutY="10.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="17" />
+            <Pane cacheShape="false" centerShape="false" layoutX="665.0" layoutY="10.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="18" />
+            <Pane cacheShape="false" centerShape="false" layoutX="704.0" layoutY="10.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="19" />
+            <Pane cacheShape="false" centerShape="false" layoutX="743.0" layoutY="10.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="20" />
+            <Pane cacheShape="false" centerShape="false" layoutX="782.0" layoutY="10.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="21" />
+            <Pane cacheShape="false" centerShape="false" layoutX="124.0" layoutY="479.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="4" GridPane.rowIndex="15" />
+            <Pane cacheShape="false" centerShape="false" layoutX="162.0" layoutY="479.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="5" GridPane.rowIndex="15" />
+            <Pane cacheShape="false" centerShape="false" layoutX="200.0" layoutY="479.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="6" GridPane.rowIndex="15" />
+            <Pane cacheShape="false" centerShape="false" layoutX="238.0" layoutY="479.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="7" GridPane.rowIndex="15" />
+            <Pane cacheShape="false" centerShape="false" layoutX="276.0" layoutY="479.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="8" GridPane.rowIndex="15" />
+            <Pane cacheShape="false" centerShape="false" layoutX="314.0" layoutY="479.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="9" GridPane.rowIndex="15" />
+            <Pane cacheShape="false" centerShape="false" layoutX="353.0" layoutY="479.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="10" GridPane.rowIndex="15" />
+            <Pane cacheShape="false" centerShape="false" layoutX="392.0" layoutY="479.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="11" GridPane.rowIndex="15" />
+            <Pane cacheShape="false" centerShape="false" layoutX="431.0" layoutY="479.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="12" GridPane.rowIndex="15" />
+            <Pane cacheShape="false" centerShape="false" layoutX="470.0" layoutY="479.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="13" GridPane.rowIndex="15" />
+            <Pane cacheShape="false" centerShape="false" layoutX="509.0" layoutY="479.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="14" GridPane.rowIndex="15" />
+            <Pane cacheShape="false" centerShape="false" layoutX="548.0" layoutY="479.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="15" GridPane.rowIndex="15" />
+            <Pane cacheShape="false" centerShape="false" layoutX="587.0" layoutY="479.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="16" GridPane.rowIndex="15" />
+            <Pane cacheShape="false" centerShape="false" layoutX="626.0" layoutY="479.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="17" GridPane.rowIndex="15" />
+            <Pane cacheShape="false" centerShape="false" layoutX="665.0" layoutY="479.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="18" GridPane.rowIndex="15" />
+            <Pane cacheShape="false" centerShape="false" layoutX="704.0" layoutY="479.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="19" GridPane.rowIndex="15" />
+            <Pane cacheShape="false" centerShape="false" layoutX="743.0" layoutY="479.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="20" GridPane.rowIndex="15" />
+            <Pane cacheShape="false" centerShape="false" layoutX="782.0" layoutY="479.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="21" GridPane.rowIndex="15" />
+            <Pane cacheShape="false" centerShape="false" layoutX="821.0" layoutY="479.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="21" GridPane.rowIndex="1" />
+            <Pane cacheShape="false" centerShape="false" layoutX="821.0" layoutY="42.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="21" GridPane.rowIndex="2" />
+            <Pane cacheShape="false" centerShape="false" layoutX="821.0" layoutY="74.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="21" GridPane.rowIndex="3" />
+            <Pane cacheShape="false" centerShape="false" layoutX="821.0" layoutY="106.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="21" GridPane.rowIndex="4" />
+            <Pane cacheShape="false" centerShape="false" layoutX="821.0" layoutY="138.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="21" GridPane.rowIndex="5" />
+            <Pane cacheShape="false" centerShape="false" layoutX="821.0" layoutY="169.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="21" GridPane.rowIndex="6" />
+            <Pane cacheShape="false" centerShape="false" layoutX="821.0" layoutY="200.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="21" GridPane.rowIndex="7" />
+            <Pane cacheShape="false" centerShape="false" layoutX="821.0" layoutY="231.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="21" GridPane.rowIndex="8" />
+            <Pane cacheShape="false" centerShape="false" layoutX="821.0" layoutY="293.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="21" GridPane.rowIndex="10" />
+            <Pane cacheShape="false" centerShape="false" layoutX="821.0" layoutY="324.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="21" GridPane.rowIndex="11" />
+            <Pane cacheShape="false" centerShape="false" layoutX="821.0" layoutY="355.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="21" GridPane.rowIndex="12" />
+            <Pane cacheShape="false" centerShape="false" layoutX="821.0" layoutY="386.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="21" GridPane.rowIndex="13" />
+            <Pane cacheShape="false" centerShape="false" layoutX="821.0" layoutY="417.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="21" GridPane.rowIndex="14" />
+            <Pane cacheShape="false" centerShape="false" layoutX="200.0" layoutY="293.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="5" GridPane.rowIndex="10" />
+            <Pane cacheShape="false" centerShape="false" layoutX="200.0" layoutY="324.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="5" GridPane.rowIndex="14" />
+            <Pane cacheShape="false" centerShape="false" layoutX="200.0" layoutY="448.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="5" GridPane.rowIndex="13" />
+            <Pane cacheShape="false" centerShape="false" layoutX="200.0" layoutY="448.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="11" GridPane.rowIndex="14" />
+            <Pane cacheShape="false" centerShape="false" layoutX="431.0" layoutY="448.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="11" GridPane.rowIndex="13" />
+            <Pane cacheShape="false" centerShape="false" layoutX="431.0" layoutY="417.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="13" GridPane.rowIndex="14" />
+            <Pane cacheShape="false" centerShape="false" layoutX="509.0" layoutY="448.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="13" GridPane.rowIndex="13" />
+            <Pane cacheShape="false" centerShape="false" layoutX="276.0" layoutY="293.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="7" GridPane.rowIndex="10" />
+            <Pane cacheShape="false" centerShape="false" layoutX="276.0" layoutY="324.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="7" GridPane.rowIndex="13" />
+            <ImageView fx:id="Hongo_2" fitHeight="65.0" fitWidth="65.0" layoutX="225.0" layoutY="245.0" pickOnBounds="true" GridPane.columnIndex="6" GridPane.rowIndex="10">
+               <image>
+                  <Image url="@../image/caja.png" />
+               </image>
+            </ImageView>
+            <Pane cacheShape="false" centerShape="false" layoutX="200.0" layoutY="293.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+            <Pane cacheShape="false" centerShape="false" layoutX="200.0" layoutY="262.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <Pane cacheShape="false" centerShape="false" layoutX="200.0" layoutY="231.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Pane cacheShape="false" centerShape="false" layoutX="200.0" layoutY="200.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Pane cacheShape="false" centerShape="false" layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Pane cacheShape="false" centerShape="false" layoutX="200.0" layoutY="138.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Pane cacheShape="false" centerShape="false" layoutX="200.0" layoutY="42.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Pane cacheShape="false" centerShape="false" layoutX="200.0" layoutY="138.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Pane cacheShape="false" centerShape="false" layoutX="86.0" layoutY="169.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="3" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Pane cacheShape="false" centerShape="false" layoutX="200.0" layoutY="262.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+            <Pane cacheShape="false" centerShape="false" layoutX="314.0" layoutY="262.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+            <Pane cacheShape="false" centerShape="false" layoutX="314.0" layoutY="231.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+            <Pane cacheShape="false" centerShape="false" layoutX="314.0" layoutY="200.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+            <Pane cacheShape="false" centerShape="false" layoutX="314.0" layoutY="169.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+            <Pane cacheShape="false" centerShape="false" layoutX="314.0" layoutY="138.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <Pane cacheShape="false" centerShape="false" layoutX="238.0" layoutY="42.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <ImageView fx:id="Hongo_6" fitHeight="65.0" fitWidth="65.0" layoutX="225.0" layoutY="307.0" pickOnBounds="true" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <image>
+                  <Image url="@../image/caja.png" />
+               </image>
+            </ImageView>
+            <Pane cacheShape="false" centerShape="false" layoutX="314.0" layoutY="138.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="10" GridPane.rowIndex="8" />
+            <Pane cacheShape="false" centerShape="false" layoutX="392.0" layoutY="262.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="10" GridPane.rowIndex="7" />
+            <Pane cacheShape="false" centerShape="false" layoutX="392.0" layoutY="231.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="10" GridPane.rowIndex="6" />
+            <Pane cacheShape="false" centerShape="false" layoutX="392.0" layoutY="200.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="10" GridPane.rowIndex="5" />
+            <Pane cacheShape="false" centerShape="false" layoutX="392.0" layoutY="169.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="10" GridPane.rowIndex="4" />
+            <Pane cacheShape="false" centerShape="false" layoutX="392.0" layoutY="138.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="11" GridPane.rowIndex="4" />
+            <Pane cacheShape="false" centerShape="false" layoutX="431.0" layoutY="138.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="11" GridPane.rowIndex="5" />
+            <Pane cacheShape="false" centerShape="false" layoutX="431.0" layoutY="169.0" maxHeight="60.0" maxWidth="64.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="11" GridPane.rowIndex="6" />
+            <Pane cacheShape="false" centerShape="false" layoutX="431.0" layoutY="200.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="11" GridPane.rowIndex="7" />
+            <Pane cacheShape="false" centerShape="false" layoutX="431.0" layoutY="231.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="11" GridPane.rowIndex="8" />
+            <Pane cacheShape="false" centerShape="false" layoutX="431.0" layoutY="262.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="10" GridPane.rowIndex="3" />
+            <Pane cacheShape="false" centerShape="false" layoutX="392.0" layoutY="106.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="11" GridPane.rowIndex="3" />
+            <Pane cacheShape="false" centerShape="false" layoutX="431.0" layoutY="106.0" maxHeight="60.0" maxWidth="64.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="12" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Pane cacheShape="false" centerShape="false" layoutX="470.0" layoutY="106.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="13" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Pane cacheShape="false" centerShape="false" layoutX="509.0" layoutY="106.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="14" GridPane.rowIndex="3" />
+            <Pane cacheShape="false" centerShape="false" layoutX="548.0" layoutY="106.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="15" GridPane.rowIndex="3" />
+            <Pane cacheShape="false" centerShape="false" layoutX="587.0" layoutY="138.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="15" GridPane.rowIndex="5" />
+            <Pane cacheShape="false" centerShape="false" layoutX="587.0" layoutY="169.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="15" GridPane.rowIndex="6" />
+            <Pane cacheShape="false" centerShape="false" layoutX="587.0" layoutY="200.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="15" GridPane.rowIndex="7" />
+            <Pane cacheShape="false" centerShape="false" layoutX="587.0" layoutY="231.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="15" GridPane.rowIndex="8" />
+            <Pane cacheShape="false" centerShape="false" layoutX="548.0" layoutY="293.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="13" GridPane.rowIndex="6" />
+            <ImageView fx:id="Hongo_4" fitHeight="65.0" fitWidth="65.0" layoutX="496.0" layoutY="245.0" pickOnBounds="true" GridPane.columnIndex="14" GridPane.rowIndex="6">
+               <image>
+                  <Image url="@../image/caja.png" />
+               </image>
+            </ImageView>
+            <Pane cacheShape="false" centerShape="false" layoutX="587.0" layoutY="106.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="17" GridPane.rowIndex="3" />
+            <Pane cacheShape="false" centerShape="false" layoutX="665.0" layoutY="106.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="17" GridPane.rowIndex="5" />
+            <Pane cacheShape="false" centerShape="false" layoutX="665.0" layoutY="106.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="19" GridPane.rowIndex="3" />
+            <Pane cacheShape="false" centerShape="false" layoutX="743.0" layoutY="106.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="19" GridPane.rowIndex="5" />
+            <Pane cacheShape="false" centerShape="false" layoutX="665.0" layoutY="169.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="18" GridPane.rowIndex="5" />
+            <Pane cacheShape="false" centerShape="false" layoutX="124.0" layoutY="231.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Pane cacheShape="false" centerShape="false" layoutX="48.0" layoutY="169.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="3" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="4" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="2" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="4" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="3" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="4" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="5" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="5" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="2" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="4" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="2" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="4" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="2" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="4" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="2" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.33" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="4" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="1" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="2" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="3" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="4" GridPane.rowIndex="8" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="9" GridPane.rowIndex="6" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="9" GridPane.rowIndex="7" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="8" GridPane.rowIndex="9" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="9" GridPane.rowIndex="9" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="10" GridPane.rowIndex="9" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="11" GridPane.rowIndex="9" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="8" GridPane.rowIndex="10" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="9" GridPane.rowIndex="10" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="10" GridPane.rowIndex="10" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="11" GridPane.rowIndex="10" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="10" GridPane.rowIndex="1" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="10" GridPane.rowIndex="2" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="11" GridPane.rowIndex="1" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="11" GridPane.rowIndex="2" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="12" GridPane.rowIndex="1" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="12" GridPane.rowIndex="2" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="13" GridPane.rowIndex="1" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="13" GridPane.rowIndex="2" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="14" GridPane.rowIndex="1" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="14" GridPane.rowIndex="2" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="15" GridPane.rowIndex="1" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="15" GridPane.rowIndex="2" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="16" GridPane.rowIndex="1" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="16" GridPane.rowIndex="2" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="17" GridPane.rowIndex="1" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="17" GridPane.rowIndex="2" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="18" GridPane.rowIndex="1" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="18" GridPane.rowIndex="2" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="20" GridPane.rowIndex="1" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="19" GridPane.rowIndex="1" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="19" GridPane.rowIndex="2" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="20" GridPane.rowIndex="2" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="16" GridPane.rowIndex="3" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="18" GridPane.rowIndex="3" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="20" GridPane.rowIndex="3" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="16" GridPane.rowIndex="4" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="17" GridPane.rowIndex="4" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="19" GridPane.rowIndex="4" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="20" GridPane.rowIndex="4" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="16" GridPane.rowIndex="6" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="17" GridPane.rowIndex="6" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="18" GridPane.rowIndex="6" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="19" GridPane.rowIndex="6" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="20" GridPane.rowIndex="6" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="16" GridPane.rowIndex="7" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="17" GridPane.rowIndex="7" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="18" GridPane.rowIndex="7" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="19" GridPane.rowIndex="7" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="20" GridPane.rowIndex="7" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="16" GridPane.rowIndex="8" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="17" GridPane.rowIndex="8" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="18" GridPane.rowIndex="8" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="19" GridPane.rowIndex="8" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="20" GridPane.rowIndex="8" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="16" GridPane.rowIndex="9" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="17" GridPane.rowIndex="9" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="18" GridPane.rowIndex="9" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="19" GridPane.rowIndex="9" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="20" GridPane.rowIndex="9" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="16" GridPane.rowIndex="5" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="20" GridPane.rowIndex="5" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="15" GridPane.rowIndex="4" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="14" GridPane.rowIndex="4" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="13" GridPane.rowIndex="4" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="12" GridPane.rowIndex="4" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="12" GridPane.rowIndex="5" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="13" GridPane.rowIndex="5" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="14" GridPane.rowIndex="5" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="12" GridPane.rowIndex="6" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="12" GridPane.rowIndex="7" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="13" GridPane.rowIndex="7" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="14" GridPane.rowIndex="7" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="12" GridPane.rowIndex="8" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="13" GridPane.rowIndex="8" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="14" GridPane.rowIndex="8" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="13" GridPane.rowIndex="9" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="14" GridPane.rowIndex="9" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="12" GridPane.rowIndex="10" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="13" GridPane.rowIndex="10" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="15" GridPane.rowIndex="10" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="16" GridPane.rowIndex="10" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="17" GridPane.rowIndex="10" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="18" GridPane.rowIndex="10" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="20" GridPane.rowIndex="10" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="14" GridPane.rowIndex="10" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="14" GridPane.rowIndex="11" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="14" GridPane.rowIndex="12" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="14" GridPane.rowIndex="13" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="14" GridPane.rowIndex="14" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="15" GridPane.rowIndex="11" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="15" GridPane.rowIndex="12" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="15" GridPane.rowIndex="13" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="15" GridPane.rowIndex="14" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="16" GridPane.rowIndex="11" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="16" GridPane.rowIndex="12" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="16" GridPane.rowIndex="13" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="16" GridPane.rowIndex="14" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="17" GridPane.rowIndex="11" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="17" GridPane.rowIndex="12" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="17" GridPane.rowIndex="13" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="17" GridPane.rowIndex="14" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="18" GridPane.rowIndex="11" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="18" GridPane.rowIndex="12" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="18" GridPane.rowIndex="13" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="18" GridPane.rowIndex="14" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="19" GridPane.rowIndex="11" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="19" GridPane.rowIndex="12" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="19" GridPane.rowIndex="13" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="19" GridPane.rowIndex="14" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="20" GridPane.rowIndex="11" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="20" GridPane.rowIndex="12" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="20" GridPane.rowIndex="14" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="13" GridPane.rowIndex="11" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="12" GridPane.rowIndex="11" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="11" GridPane.rowIndex="11" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="10" GridPane.rowIndex="11" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="9" GridPane.rowIndex="11" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="8" GridPane.rowIndex="11" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="13" GridPane.rowIndex="12" />
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="12" GridPane.rowIndex="12" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="11" GridPane.rowIndex="12" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="10" GridPane.rowIndex="12" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="9" GridPane.rowIndex="12" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="8" GridPane.rowIndex="12" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="7" GridPane.rowIndex="11" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="6" GridPane.rowIndex="11" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="7" GridPane.rowIndex="12" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="6" GridPane.rowIndex="12" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="8" GridPane.rowIndex="13" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="9" GridPane.rowIndex="13" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="10" GridPane.rowIndex="13" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="6" GridPane.rowIndex="13" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="6" GridPane.rowIndex="14" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="7" GridPane.rowIndex="14" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="8" GridPane.rowIndex="14" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="9" GridPane.rowIndex="14" />
+            <Pane opacity="0.33" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="10" GridPane.rowIndex="14" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="5" GridPane.rowIndex="11" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="5" GridPane.rowIndex="12" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="2" GridPane.rowIndex="14" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="3" GridPane.rowIndex="14" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="4" GridPane.rowIndex="14" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="4" GridPane.rowIndex="10" />
+            <ImageView fx:id="Hongo_5" fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" GridPane.columnIndex="18" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../image/caja.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="782.0" layoutY="386.0" opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="20" GridPane.rowIndex="13" />
+            <ImageView fx:id="Hongo_3" cacheHint="SCALE" fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" GridPane.columnIndex="19" GridPane.rowIndex="10">
+               <image>
+                  <Image url="@../image/caja.png" />
+               </image>
+            </ImageView>
+              <ImageView fx:id="Hongo_1" fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" GridPane.columnIndex="6" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../image/caja.png" />
+               </image>
+            </ImageView>
+            <Label text="Level: 1" textFill="WHITE" GridPane.columnSpan="2" GridPane.rowIndex="16">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label text="Moves:" textFill="WHITE" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="16">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="Moves" alignment="CENTER" text="0" textFill="WHITE" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="16">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label text="Pushes:" textFill="#f2efef" GridPane.columnIndex="10" GridPane.columnSpan="2" GridPane.rowIndex="16">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="Pushes" text="0" textFill="WHITE" GridPane.columnIndex="12" GridPane.columnSpan="2" GridPane.rowIndex="16">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_Undo" mnemonicParsing="false" onAction="#Undo" style="-fx-background-color: #085078;" text="UNDO" textFill="#ebe2e2" textOverrun="CLIP" GridPane.columnIndex="14" GridPane.columnSpan="2" GridPane.rowIndex="16" />
+            <Button mnemonicParsing="false" onAction="#Reset" style="-fx-background-color: #ff4b2b;" text="RESET" textFill="WHITE" GridPane.columnIndex="16" GridPane.columnSpan="2" GridPane.rowIndex="16" />
+            <Button mnemonicParsing="false" onAction="#ShowMenu" text="BACK" GridPane.columnIndex="20" GridPane.columnSpan="2" GridPane.rowIndex="16" />
+            <ImageView fx:id="avatar" fitHeight="100.0" fitWidth="140.0" focusTraversable="true" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="13">
+               <image>
+                  <Image url="@../image/personaje.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets bottom="40.0" />
+               </GridPane.margin>
+            </ImageView>
+          
+            <Pane layoutX="48.0" layoutY="300.0" opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            <Pane layoutX="48.0" layoutY="330.0" opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+            <Pane layoutX="48.0" layoutY="360.0" opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <Label fx:id="TiempoLevel" style="-fx-background-color: #004b79;" text="Time: 0" textFill="#ebebeb" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="16">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="Timer" layoutX="641.0" layoutY="483.0" mnemonicParsing="false" onMouseClicked="#ClickTime" style="-fx-background-color: #ce181e;" text="TIMER" textFill="WHITE" GridPane.columnIndex="18" GridPane.columnSpan="2" GridPane.rowIndex="16" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="12" GridPane.rowIndex="14" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="6" GridPane.rowIndex="10" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="14" GridPane.rowIndex="6" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="18" GridPane.rowIndex="4" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="19" GridPane.rowIndex="10" />
+            <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" styleClass="Street" stylesheets="@Styles.css" GridPane.columnIndex="12" GridPane.rowIndex="12" />
+            <Pane cacheShape="false" centerShape="false" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.rowIndex="9" />
+            <Pane cacheShape="false" centerShape="false" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Pane cacheShape="false" centerShape="false" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <Pane cacheShape="false" centerShape="false" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+            <Pane cacheShape="false" centerShape="false" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+            <Pane cacheShape="false" centerShape="false" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+            <Pane cacheShape="false" centerShape="false" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+            <Pane cacheShape="false" centerShape="false" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="12" GridPane.rowIndex="9" />
+            <Pane cacheShape="false" centerShape="false" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="15" GridPane.rowIndex="9" />
+            <Pane cacheShape="false" centerShape="false" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" GridPane.columnIndex="21" GridPane.rowIndex="9" />
+            <Pane cacheShape="false" centerShape="false" maxHeight="60.0" maxWidth="64.0" prefHeight="150.0" prefWidth="150.0" styleClass="Pane" stylesheets="@Styles.css" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

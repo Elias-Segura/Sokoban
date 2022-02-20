@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="Container" prefHeight="610.0" prefWidth="993.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="principal.OptionsMenuController">
+   <children>
+      <HBox fx:id="Menu" prefHeight="610.0" prefWidth="993.0" style="-fx-background-color: #243b55;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="621.0" prefWidth="327.0" spacing="3.0" style="-fx-background-color: #243b55;">
+               <children>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="410.0" prefHeight="147.0" prefWidth="327.0">
+                     <children>
+                        <ImageView fitHeight="93.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/BoxLevel5.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" prefHeight="135.0" prefWidth="335.0" text="Sokoban" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #243b55;">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#ShowHome" prefHeight="100.0" prefWidth="266.0" style="-fx-background-color: #015668; -fx-border-color: #00a8cc;" text="Home" textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                           <font>
+                              <Font name="System Italic" size="25.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #243b55;">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#ShowLevels" prefHeight="100.0" prefWidth="266.0" style="-fx-background-color: #015668; -fx-border-color: #00a8cc;" text="Levels" textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                           <font>
+                              <Font name="System Italic" size="25.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #243b55;">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#ShowAchievements" prefHeight="100.0" prefWidth="266.0" style="-fx-background-color: #015668; -fx-border-color: #00a8cc;" text="Achievements" textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                           <font>
+                              <Font name="System Italic" size="25.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #243b55;">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#ShowAbout" prefHeight="100.0" prefWidth="266.0" style="-fx-background-color: #015668; -fx-border-color: #00a8cc;" text="About" textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                           <font>
+                              <Font name="System Italic" size="25.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #243b55;">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#ShowPerfile" prefHeight="100.0" prefWidth="266.0" style="-fx-background-color: #015668; -fx-border-color: #00a8cc;" text="Perfile" textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                           <font>
+                              <Font name="System Italic" size="25.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <StackPane layoutX="326.0" prefHeight="610.0" prefWidth="800.0" style="-fx-background-color: #283e51;">
+               <children>
+                  <GridPane fx:id="PaneShow" layoutX="10.0" layoutY="10.0" visible="false">
+                     <children>
+                        <VBox alignment="CENTER" layoutX="234.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+                           <children>
+                              <Label text="Level3" textFill="WHITE">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="150.0" fitWidth="237.0" onMouseClicked="#ShowLevel3" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/BoxLevel3.png" />
+                                 </image>
+                              </ImageView>
+                              <ProgressBar fx:id="LevelProgress3" prefHeight="11.0" prefWidth="156.0" progress="0.0">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                                 <effect>
+                                    <InnerShadow choke="0.43" color="#0754f0" />
+                                 </effect>
+                              </ProgressBar>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label text="Level1" textFill="WHITE">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="150.0" fitWidth="237.0" onMouseClicked="#ShowLevel1" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/bloque.png" />
+                                 </image>
+                              </ImageView>
+                              <ProgressBar fx:id="LevelProgress1" prefHeight="11.0" prefWidth="156.0" progress="0.0" style="-fx-background-color: #CCC;">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets top="7.0" />
+                                 </VBox.margin>
+                               
+                                 <effect>
+                                    <InnerShadow choke="0.43" color="#0754f0" />
+                                 </effect>
+                              </ProgressBar>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                           <children>
+                              <Label text="Level2" textFill="WHITE">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="150.0" fitWidth="237.0" onMouseClicked="#ShowLevel2" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/BoxLevel2.png" />
+                                 </image>
+                              </ImageView>
+                              <ProgressBar fx:id="LevelProgress2" prefHeight="11.0" prefWidth="156.0" progress="0.0">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                                 <effect>
+                                    <InnerShadow choke="0.43" color="#0754f0" />
+                                 </effect>
+                              </ProgressBar>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="413.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3">
+                           <children>
+                              <Label text="Level4" textFill="WHITE">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="150.0" fitWidth="237.0" onMouseClicked="#ShowLevel4" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/BoxLevel4.png" />
+                                 </image>
+                              </ImageView>
+                              <ProgressBar fx:id="LevelProgress4" prefHeight="11.0" prefWidth="156.0" progress="0.0">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                                 <effect>
+                                    <InnerShadow choke="0.43" color="#0754f0" />
+                                 </effect>
+                              </ProgressBar>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="10.0" layoutY="213.0" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+                           <children>
+                              <Label text="Level5" textFill="WHITE">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="150.0" fitWidth="237.0" onMouseClicked="#ShowLevel5" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/BoxLevel5.png" />
+                                 </image>
+                              </ImageView>
+                              <ProgressBar fx:id="LevelProgress5" prefHeight="11.0" prefWidth="156.0" progress="0.0">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                                 <effect>
+                                    <InnerShadow choke="0.43" color="#0754f0" />
+                                 </effect>
+                              </ProgressBar>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="212.0" layoutY="213.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <Label text="Level6" textFill="WHITE">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="150.0" fitWidth="237.0" onMouseClicked="#ShowLevel6" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/BoxLevel6.png" />
+                                 </image>
+                              </ImageView>
+                              <ProgressBar fx:id="LevelProgress6" prefHeight="11.0" prefWidth="156.0" progress="0.0">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                                 <effect>
+                                    <InnerShadow choke="0.43" color="#0754f0" />
+                                 </effect>
+                              </ProgressBar>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="413.0" layoutY="213.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <children>
+                              <Label text="Level7" textFill="WHITE">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="150.0" fitWidth="237.0" onMouseClicked="#ShowLevel7" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/BoxLevel7.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ProgressBar fx:id="LevelProgress7" prefHeight="11.0" prefWidth="156.0" progress="0.0">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                                 <effect>
+                                    <InnerShadow choke="0.43" color="#0754f0" />
+                                 </effect>
+                              </ProgressBar>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="10.0" layoutY="416.0" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <children>
+                              <Label text="Level8" textFill="WHITE">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="150.0" fitWidth="237.0" onMouseClicked="#ShowLevel8" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/BoxLevel8.png" />
+                                 </image>
+                              </ImageView>
+                              <ProgressBar fx:id="LevelProgress8" prefHeight="11.0" prefWidth="156.0" progress="0.0">
+                                 <effect>
+                                    <InnerShadow choke="0.43" color="#0754f0" />
+                                 </effect>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </ProgressBar>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="255.0" layoutY="416.0" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+                           <children>
+                              <Label text="Level9" textFill="WHITE">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="150.0" fitWidth="237.0" onMouseClicked="#ShowLevel9" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/BoxLevel9.png" />
+                                 </image>
+                              </ImageView>
+                              <ProgressBar fx:id="LevelProgress9" prefHeight="11.0" prefWidth="156.0" progress="0.0">
+                                 <effect>
+                                    <InnerShadow choke="0.43" color="#0754f0" />
+                                 </effect>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </ProgressBar>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <Label text="Level10" textFill="WHITE">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="150.0" fitWidth="237.0" onMouseClicked="#ShowLevel10" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/BoxLevel10.png" />
+                                 </image>
+                              </ImageView>
+                              <ProgressBar fx:id="LevelProgress10" prefHeight="11.0" prefWidth="156.0" progress="0.0">
+                                 <effect>
+                                    <InnerShadow choke="0.43" color="#0754f0" />
+                                 </effect>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </ProgressBar>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <children>
+                              <Label text="Level11" textFill="WHITE">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="150.0" fitWidth="237.0" onMouseClicked="#ShowLevel11" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/BoxLevel11.png" />
+                                 </image>
+                              </ImageView>
+                              <ProgressBar fx:id="LevelProgress11" prefHeight="11.0" prefWidth="156.0" progress="0.0">
+                                 <effect>
+                                    <InnerShadow choke="0.43" color="#0754f0" />
+                                 </effect>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </ProgressBar>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                           <children>
+                              <Label text="Level12" textFill="WHITE">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="150.0" fitWidth="237.0" onContextMenuRequested="#SelectAvatar1" onMouseClicked="#ShowLevel12" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/Boxlevel12.png" />
+                                 </image>
+                              </ImageView>
+                              <ProgressBar fx:id="LevelProgress12" prefHeight="11.0" prefWidth="156.0" progress="0.0">
+                                 <effect>
+                                    <InnerShadow choke="0.43" color="#0754f0" />
+                                 </effect>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </ProgressBar>
+                           </children>
+                        </VBox>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <Circle fx:id="circle_1" fill="#ff1f1f00" radius="212.0" stroke="#37a9ff" strokeType="INSIDE" strokeWidth="6.0" style="-fx-stroke-dash-array: 20;" />
+                  <Circle fx:id="circle_2" fill="#1f93ff00" radius="180.0" stroke="#1eff87" strokeType="INSIDE" strokeWidth="6.0" style="-fx-stroke-dash-array: 80;" />
+                  <ImageView fx:id="avatar" fitHeight="200.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/542e8c3fa4fdd3b5b2c6feb9c8041ad3.gif" />
+                     </image>
+                  </ImageView>
+                  <GridPane fx:id="About" layoutX="10.0" layoutY="10.0" style="-fx-background-color: #CCC;" visible="false" StackPane.alignment="CENTER">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnSpan="3" GridPane.rowSpan="3" GridPane.valignment="CENTER">
+                           <children>
+                              <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0b8793;">
+                                 <children>
+                                    <Label alignment="BOTTOM_CENTER" graphicTextGap="15.0" layoutX="190.0" layoutY="38.0" text="Programacion II" textFill="WHITE">
+                                       <font>
+                                          <Font size="34.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="BOTTOM_CENTER" graphicTextGap="15.0" layoutX="139.0" layoutY="95.0" text="Ing.Sistemas de la Informacion" textFill="WHITE">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="BOTTOM_CENTER" graphicTextGap="15.0" layoutX="10.0" layoutY="171.0" text="Elias Segura " textFill="WHITE">
+                                       <font>
+                                          <Font size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="BOTTOM_CENTER" graphicTextGap="15.0" layoutX="458.0" layoutY="153.0" text="I CICLO 2020" textFill="WHITE">
+                                       <font>
+                                          <Font size="22.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="410.0" prefWidth="604.0" style="-fx-background-color: #CCC;">
+                                 <children>
+                                    <Label layoutX="229.0" layoutY="16.0" text="Sokoban">
+                                       <font>
+                                          <Font size="34.0" />
+                                       </font>
+                                    </Label>
+                                    <Text layoutX="51.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Este juego fue inventado por Hiroyuki Imabayashi en 1981 y publicado en Japón en 1982 por su compañía Thinking Rabbit. Pero su fama mundial empezó a partir del lanzamiento, varios años después, de la versión de Spectrum HoloByte para IBM-PC. " textAlignment="JUSTIFY" wrappingWidth="508.6172790527344">
+                                       <font>
+                                          <Font name="System Italic" size="20.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </GridPane>
+                  <GridPane fx:id="Perfile" layoutX="10.0" layoutY="10.0" style="-fx-background-color: #283e51;" visible="false">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnSpan="3" GridPane.rowSpan="3">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="346.0" prefWidth="733.0" spacing="6.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="294.0" prefWidth="201.0">
+                                       <children>
+                                          <BorderPane fx:id="Border_1" prefHeight="200.0" prefWidth="200.0" styleClass="IsNotSelectedPersonage" stylesheets="@Styles.css">
+                                             <center>
+                                                <ImageView fitHeight="161.0" fitWidth="116.0" onMouseClicked="#SelectAvatar1" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                                   <image>
+                                                      <Image url="@../image/542e8c3fa4fdd3b5b2c6feb9c8041ad3.gif" />
+                                                   </image>
+                                                </ImageView>
+                                             </center>
+                                             <effect>
+                                                <InnerShadow choke="0.43" color="#0089e4" />
+                                             </effect>
+                                          </BorderPane>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="294.0" prefWidth="201.0">
+                                       <children>
+                                          <BorderPane fx:id="Border_2" prefHeight="200.0" prefWidth="200.0" styleClass="IsNotSelectedPersonage" stylesheets="@Styles.css">
+                                             <center>
+                                                <ImageView fitHeight="161.0" fitWidth="116.0" onMouseClicked="#SelectAvatar2" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                                   <image>
+                                                      <Image url="@../image/Webp.net-gifmaker.gif" />
+                                                   </image>
+                                                </ImageView>
+                                             </center>
+                                             <effect>
+                                                <InnerShadow choke="0.43" color="#0089e4" />
+                                             </effect>
+                                          </BorderPane>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="294.0" prefWidth="201.0">
+                                       <children>
+                                          <BorderPane fx:id="Border_3" prefHeight="200.0" prefWidth="200.0" styleClass="IsNotSelectedPersonage" stylesheets="@Styles.css">
+                                             <center>
+                                                <ImageView fitHeight="161.0" fitWidth="116.0" onMouseClicked="#SelectAvatar3" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                                   <image>
+                                                      <Image url="@../image/Personaje3.gif" />
+                                                   </image>
+                                                </ImageView>
+                                             </center>
+                                             <effect>
+                                                <InnerShadow choke="0.43" color="#0089e4" />
+                                             </effect></BorderPane>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER_RIGHT" layoutX="483.0" layoutY="10.0" prefHeight="294.0" prefWidth="201.0">
+                                       <children>
+                                          <BorderPane fx:id="Border_4" prefHeight="200.0" prefWidth="200.0" styleClass="IsNotSelectedPersonage" stylesheets="@Styles.css">
+                                             <center>
+                                                <ImageView fitHeight="161.0" fitWidth="116.0" onMouseClicked="#SelectAvatar4" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                                   <image>
+                                                      <Image url="@../image/Personaje4.gif" />
+                                                   </image>
+                                                </ImageView>
+                                             </center>
+                                             <effect>
+                                                <InnerShadow choke="0.43" color="#0089e4" />
+                                             </effect>
+                                          </BorderPane>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <VBox alignment="CENTER" prefHeight="355.0" prefWidth="733.0" spacing="50.0">
+                                 <children>
+                                    <HBox alignment="CENTER" spacing="4.0">
+                                       <children>
+                                          <Label text="Name:  " textAlignment="CENTER" textFill="#e3e3e3">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="Name" alignment="CENTER" promptText="Type your name " />
+                                          <Button graphicTextGap="8.0" mnemonicParsing="false" onAction="#ShowLevels" style="-fx-background-color: #0c7b93;" text="Go" textFill="WHITE" textOverrun="LEADING_WORD_ELLIPSIS" />
+                                       </children>
+                                    </HBox>
+                                    <Pane prefHeight="56.0" prefWidth="733.0">
+                                       <children>
+                                          <Slider fx:id="VolumeGame" blockIncrement="5.0" layoutX="346.0" layoutY="3.0" majorTickUnit="10.0" max="1.0" onMouseClicked="#VolumeScroll" prefHeight="14.0" prefWidth="131.0" value="0.4">
+                                             <effect>
+                                                <InnerShadow choke="0.13" color="RED" />
+                                             </effect></Slider>
+                                          <Label layoutX="298.0" layoutY="1.0" text="Volume:" textFill="WHITE">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="298.0" layoutY="33.0" text="Sound:" textFill="WHITE">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Slider fx:id="SoundGame" blockIncrement="5.0" layoutX="346.0" layoutY="35.0" majorTickUnit="10.0" max="1.0" onMouseClicked="#VolumeScroll" prefHeight="14.0" prefWidth="131.0" value="1.0">
+                                             <effect>
+                                                <InnerShadow choke="0.13" color="RED" />
+                                             </effect>
+                                          </Slider>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </GridPane>
+                  <GridPane fx:id="Achievement" layoutX="10.0" layoutY="10.0" style="-fx-background-color: #283e51;" visible="false">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="348.0" minWidth="10.0" prefWidth="217.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="372.0" minWidth="10.0" prefWidth="245.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="240.0" minWidth="10.0" prefWidth="240.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="240.0" minWidth="10.0" prefWidth="240.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Pane fx:id="Level1" opacity="0.49">
+                           <children>
+                              <ImageView fitHeight="65.0" fitWidth="64.0" layoutX="50.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/bloque.png" />
+                                 </image>
+                              </ImageView>
+                              <Circle fill="#1f93ff00" layoutX="82.0" layoutY="102.0" radius="62.0" stroke="#1eff87" strokeType="INSIDE" strokeWidth="6.0" style="-fx-stroke-dash-array: 20;">
+                                 <effect>
+                                    <InnerShadow choke="0.43" color="#d31111" />
+                                 </effect>
+                              </Circle>
+                              <Label layoutX="68.0" layoutY="14.0" text="Level1" textFill="WHITE" />
+                              <HBox layoutX="54.0" layoutY="173.0">
+                                 <children>
+                                    <Label fx:id="MovesLevel1" layoutX="54.0" layoutY="173.0" text="230 moves " textFill="WHITE" />
+                                    <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/tick.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="TimelLevel1" layoutX="54.0" layoutY="190.0" opacity="0.49">
+                                 <children>
+                                    <Label fx:id="TimerLevel1" layoutX="54.0" layoutY="173.0" text="40 Seconds" textFill="WHITE" />
+                                    <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/tick.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="Level2" opacity="0.49" GridPane.columnIndex="1">
+                           <children>
+                              <ImageView fitHeight="65.0" fitWidth="64.0" layoutX="65.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                 <image>
+                                    <Image url="@../image/BoxLevel2.png" />
+                                 </image>
+                              </ImageView>
+                              <Circle fill="#1f93ff00" layoutX="97.0" layoutY="102.0" radius="62.0" stroke="#1eff87" strokeType="INSIDE" strokeWidth="6.0" style="-fx-stroke-dash-array: 20;" GridPane.columnIndex="1">
+                                 <effect>
+                                    <InnerShadow choke="0.43" color="#d31111" />
+                                 </effect>
+                              </Circle>
+                              <Label layoutX="83.0" layoutY="14.0" text="Level2" textFill="WHITE" />
+                              <HBox layoutX="68.0" layoutY="173.0">
+                                 <children>
+                                    <Label fx:id="MovesLevel2" layoutX="68.0" layoutY="173.0" text="585 moves" textFill="WHITE" />
+                                    <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/tick.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="TimelLevel2" layoutX="67.0" layoutY="190.0" opacity="0.49">
+                                 <children>
+                                    <Label fx:id="TimerLevel2" text="120 Seconds" textFill="WHITE" />
+                                    <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/tick.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="Level3" layoutX="174.0" layoutY="10.0" opacity="0.49" GridPane.columnIndex="2">
+                           <children>
+                              <ImageView fitHeight="65.0" fitWidth="64.0" layoutX="65.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                 <image>
+                                    <Image url="@../image/BoxLevel3.png" />
+                                 </image>
+                              </ImageView>
+                              <Circle fill="#1f93ff00" layoutX="97.0" layoutY="102.0" radius="62.0" stroke="#1eff87" strokeType="INSIDE" strokeWidth="6.0" style="-fx-stroke-dash-array: 20;" GridPane.columnIndex="1">
+                                 <effect>
+                                    <InnerShadow choke="0.43" color="#d31111" />
+                                 </effect>
+                              </Circle>
+                              <Label layoutX="83.0" layoutY="14.0" text="Level3" textFill="WHITE" />
+                              <HBox layoutX="68.0" layoutY="173.0">
+                                 <children>
+                                    <Label fx:id="MovesLevel3" layoutX="68.0" layoutY="173.0" text="640 moves" textFill="WHITE" />
+                                    <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/tick.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="TimelLevel3" layoutX="67.0" layoutY="190.0" opacity="0.49">
+                                 <children>
+                                    <Label fx:id="TimerLevel3" text="130 Seconds" textFill="WHITE" />
+                                    <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/tick.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="Level4" opacity="0.49" GridPane.columnIndex="3">
+                           <children>
+                              <ImageView fitHeight="65.0" fitWidth="64.0" layoutX="65.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                 <image>
+                                    <Image url="@../image/BoxLevel4.png" />
+                                 </image>
+                              </ImageView>
+                              <Circle fill="#1f93ff00" layoutX="97.0" layoutY="102.0" radius="62.0" stroke="#1eff87" strokeType="INSIDE" strokeWidth="6.0" style="-fx-stroke-dash-array: 20;" GridPane.columnIndex="1">
+                                 <effect>
+                                    <InnerShadow choke="0.43" color="#d31111" />
+                                 </effect>
+                              </Circle>
+                              <Label layoutX="83.0" layoutY="14.0" text="Level4" textFill="WHITE" />
+                              <HBox layoutX="68.0" layoutY="173.0">
+                                 <children>
+                                    <Label fx:id="MovesLevel4" layoutX="68.0" layoutY="173.0" text="436 moves" textFill="WHITE" />
+                                    <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/tick.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="TimelLevel4" layoutX="67.0" layoutY="190.0" opacity="0.49">
+                                 <children>
+                                    <Label fx:id="TimerLevel4" text="95 Seconds" textFill="WHITE" />
+                                    <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/tick.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="Level5" opacity="0.49" GridPane.rowIndex="1">
+                           <children>
+                              <ImageView fitHeight="65.0" fitWidth="64.0" layoutX="65.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                 <image>
+                                    <Image url="@../image/BoxLevel5.png" />
+                                 </image>
+                              </ImageView>
+                              <Circle fill="#1f93ff00" layoutX="97.0" layoutY="102.0" radius="62.0" stroke="#1eff87" strokeType="INSIDE" strokeWidth="6.0" style="-fx-stroke-dash-array: 20;" GridPane.columnIndex="1">
+                                 <effect>
+                                    <InnerShadow choke="0.43" color="#d31111" />
+                                 </effect>
+                              </Circle>
+                              <Label layoutX="83.0" layoutY="14.0" text="Level5" textFill="WHITE" />
+                              <HBox layoutX="68.0" layoutY="173.0">
+                                 <children>
+                                    <Label fx:id="MovesLevel5" layoutX="68.0" layoutY="173.0" text="907 moves" textFill="WHITE" />
+                                    <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/tick.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="TimelLevel5" layoutX="67.0" layoutY="190.0" opacity="0.49">
+                                 <children>
+                                    <Label fx:id="TimerLevel5" text="182 Seconds" textFill="WHITE" />
+                                    <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/tick.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="Level6" opacity="0.49" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <ImageView fitHeight="65.0" fitWidth="64.0" layoutX="65.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                 <image>
+                                    <Image url="@../image/BoxLevel6.png" />
+                                 </image>
+                              </ImageView>
+                              <Circle fill="#1f93ff00" layoutX="97.0" layoutY="102.0" radius="62.0" stroke="#1eff87" strokeType="INSIDE" strokeWidth="6.0" style="-fx-stroke-dash-array: 20;" GridPane.columnIndex="1">
+                                 <effect>
+                                    <InnerShadow choke="0.43" color="#d31111" />
+                                 </effect>
+                              </Circle>
+                              <Label layoutX="83.0" layoutY="14.0" text="Level6" textFill="WHITE" />
+                              <HBox layoutX="68.0" layoutY="173.0">
+                                 <children>
+                                    <Label fx:id="MovesLevel6" layoutX="68.0" layoutY="173.0" text="312 moves" textFill="WHITE" />
+                                    <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/tick.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="TimelLevel6" layoutX="67.0" layoutY="190.0" opacity="0.49">
+                                 <children>
+                                    <Label fx:id="TimerLevel6" text="64 Seconds" textFill="WHITE" />
+                                    <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/tick.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="Level7" opacity="0.49" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <children>
+                              <ImageView fitHeight="65.0" fitWidth="64.0" layoutX="65.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                 <image>
+                                    <Image url="@../image/BoxLevel7.png" />
+                                 </image>
+                              </ImageView>
+                              <Circle fill="#1f93ff00" layoutX="97.0" layoutY="102.0" radius="62.0" stroke="#1eff87" strokeType="INSIDE" strokeWidth="6.0" style="-fx-stroke-dash-array: 20;" GridPane.columnIndex="1">
+                                 <effect>
+                                    <InnerShadow choke="0.43" color="#d31111" />
+                                 </effect>
+                              </Circle>
+                              <Label layoutX="83.0" layoutY="14.0" text="Level7" textFill="WHITE" />
+                              <HBox layoutX="68.0" layoutY="173.0">
+                                 <children>
+                                    <Label fx:id="MovesLevel7" layoutX="68.0" layoutY="173.0" text="407 moves" textFill="WHITE" />
+                                    <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/tick.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="TimelLevel7" layoutX="67.0" layoutY="190.0" opacity="0.49">
+                                 <children>
+                                    <Label fx:id="TimerLevel7" text="92 Seconds" textFill="WHITE" />
+                                    <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/tick.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="Level8" opacity="0.49" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <children>
+                              <ImageView fitHeight="65.0" fitWidth="64.0" layoutX="65.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                 <image>
+                                    <Image url="@../image/BoxLevel8.png" />
+                                 </image>
+                              </ImageView>
+                              <Circle fill="#1f93ff00" layoutX="97.0" layoutY="102.0" radius="62.0" stroke="#1eff87" strokeType="INSIDE" strokeWidth="6.0" style="-fx-stroke-dash-array: 20;" GridPane.columnIndex="1">
+                                 <effect>
+                                    <InnerShadow choke="0.43" color="#d31111" />
+                                 </effect>
+                              </Circle>
+                              <Label layoutX="83.0" layoutY="14.0" text="Level8" textFill="WHITE" />
+                              <HBox layoutX="68.0" layoutY="173.0">
+                                 <children>
+                                    <Label fx:id="MovesLevel8" layoutX="68.0" layoutY="173.0" text="942 moves" textFill="WHITE" />
+                                    <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/tick.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="TimelLevel8" layoutX="67.0" layoutY="190.0" opacity="0.49">
+                                 <children>
+                                    <Label fx:id="TimerLevel8" text="195 Seconds" textFill="WHITE" />
+                                    <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/tick.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="Level9" opacity="0.49" GridPane.rowIndex="2">
+                           <children>
+                              <ImageView fitHeight="65.0" fitWidth="64.0" layoutX="65.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                 <image>
+                                    <Image url="@../image/BoxLevel9.png" />
+                                 </image>
+                              </ImageView>
+                              <Circle fill="#1f93ff00" layoutX="97.0" layoutY="102.0" radius="62.0" stroke="#1eff87" strokeType="INSIDE" strokeWidth="6.0" style="-fx-stroke-dash-array: 20;" GridPane.columnIndex="1">
+                                 <effect>
+                                    <InnerShadow choke="0.43" color="#d31111" />
+                                 </effect>
+                              </Circle>
+                              <Label layoutX="83.0" layoutY="14.0" text="Level9" textFill="WHITE" />
+                              <HBox layoutX="68.0" layoutY="173.0">
+                                 <children>
+                                    <Label fx:id="MovesLevel9" layoutX="68.0" layoutY="173.0" text="620 moves" textFill="WHITE" />
+                                    <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/tick.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="TimelLevel9" layoutX="67.0" layoutY="190.0" opacity="0.49">
+                                 <children>
+                                    <Label fx:id="TimerLevel9" text="140 Seconds" textFill="WHITE" />
+                                    <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/tick.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="Level10" opacity="0.49" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <ImageView fitHeight="65.0" fitWidth="64.0" layoutX="65.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                 <image>
+                                    <Image url="@../image/BoxLevel10.png" />
+                                 </image>
+                              </ImageView>
+                              <Circle fill="#1f93ff00" layoutX="97.0" layoutY="102.0" radius="62.0" stroke="#1eff87" strokeType="INSIDE" strokeWidth="6.0" style="-fx-stroke-dash-array: 20;" GridPane.columnIndex="1">
+                                 <effect>
+                                    <InnerShadow choke="0.43" color="#d31111" />
+                                 </effect>
+                              </Circle>
+                              <Label layoutX="83.0" layoutY="14.0" text="Level10" textFill="WHITE" />
+                              <HBox layoutX="68.0" layoutY="173.0">
+                                 <children>
+                                    <Label fx:id="MovesLevel10" layoutX="68.0" layoutY="173.0" text="892 moves" textFill="WHITE" />
+                                    <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/tick.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="TimelLevel10" layoutX="67.0" layoutY="190.0" opacity="0.49">
+                                 <children>
+                                    <Label fx:id="TimerLevel10" text="230 Seconds" textFill="WHITE" />
+                                    <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/tick.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="Level11" opacity="0.49" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <children>
+                              <ImageView fitHeight="65.0" fitWidth="64.0" layoutX="65.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                 <image>
+                                    <Image url="@../image/BoxLevel11.png" />
+                                 </image>
+                              </ImageView>
+                              <Circle fill="#1f93ff00" layoutX="97.0" layoutY="102.0" radius="62.0" stroke="#1eff87" strokeType="INSIDE" strokeWidth="6.0" style="-fx-stroke-dash-array: 20;" GridPane.columnIndex="1">
+                                 <effect>
+                                    <InnerShadow choke="0.43" color="#d31111" />
+                                 </effect>
+                              </Circle>
+                              <Label layoutX="83.0" layoutY="14.0" text="Level11" textFill="WHITE" />
+                              <HBox layoutX="68.0" layoutY="173.0">
+                                 <children>
+                                    <Label fx:id="MovesLevel11" layoutX="68.0" layoutY="173.0" text="713 moves" textFill="WHITE" />
+                                    <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/tick.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="TimelLevel11" layoutX="67.0" layoutY="190.0" opacity="0.49">
+                                 <children>
+                                    <Label fx:id="TimerLevel11" text="220 Seconds" textFill="WHITE" />
+                                    <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/tick.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="Level12" opacity="0.49" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                           <children>
+                              <ImageView fitHeight="65.0" fitWidth="64.0" layoutX="65.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                 <image>
+                                    <Image url="@../image/Boxlevel12.png" />
+                                 </image>
+                              </ImageView>
+                              <Circle fill="#1f93ff00" layoutX="97.0" layoutY="102.0" radius="62.0" stroke="#1eff87" strokeType="INSIDE" strokeWidth="6.0" style="-fx-stroke-dash-array: 20;" GridPane.columnIndex="1">
+                                 <effect>
+                                    <InnerShadow choke="0.43" color="#d31111" />
+                                 </effect>
+                              </Circle>
+                              <Label layoutX="83.0" layoutY="14.0" text="Level12" textFill="WHITE" />
+                              <HBox layoutX="68.0" layoutY="173.0">
+                                 <children>
+                                    <Label fx:id="MovesLevel12" layoutX="68.0" layoutY="173.0" text="1012 moves" textFill="WHITE" />
+                                    <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/tick.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="TimelLevel12" layoutX="67.0" layoutY="190.0" opacity="0.49">
+                                 <children>
+                                    <Label fx:id="TimerLevel12" text="240 Seconds" textFill="WHITE" />
+                                    <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/tick.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                     </children>
+                  </GridPane>
+                  <Button fx:id="resetGame" graphicTextGap="8.0" mnemonicParsing="false" onAction="#DeleteAchievements" style="-fx-background-color: #0c7b93;" text="RESET" textFill="WHITE" textOverrun="LEADING_WORD_ELLIPSIS" StackPane.alignment="BOTTOM_CENTER">
+                     <StackPane.margin>
+                        <Insets bottom="50.0" />
+                     </StackPane.margin>
+                  </Button>
+               </children>
+            </StackPane>
+         </children>
+      </HBox>
+      <StackPane fx:id="Start" prefHeight="610.0" prefWidth="993.0" style="-fx-background-color: #29323c;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Circle fx:id="CircleStart_1" fill="#ff1f1f00" radius="155.0" stroke="#37a9ff" strokeType="INSIDE" strokeWidth="6.0" style="-fx-stroke-dash-array: 20;" />
+            <Circle fx:id="CircleStart_2" fill="#1f93ff00" radius="137.0" stroke="#1eff87" strokeType="INSIDE" strokeWidth="6.0" style="-fx-stroke-dash-array: 80;" />
+            <ImageView fx:id="avatar1" fitHeight="200.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/personaje.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
